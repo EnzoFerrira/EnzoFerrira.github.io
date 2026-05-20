@@ -8,7 +8,6 @@
     --transition: all 0.3s ease;
 
     /* Theme - Dark (Default) */
-    --bg-nav: rgba(10, 10, 10, 0.8);
     --bg-body: #1c1c1e;
     --bg-card: #2c2c2e;
     --bg-alt: #242426;
@@ -27,23 +26,21 @@
 }
 
 [data-theme="light"] {
-    /* Deeper Latte/Cream palette */
-    --bg-nav: rgba(229, 216, 193, 0.9);
-    --bg-body: #e5d8c1;
-    --bg-card: #f0e5d0;
-    --bg-alt: #dbcbaf;
-    --text-main: #2e2620;
-    --text-muted: #685c50;
-    --primary: #453a30;
-    --primary-hover: #5e5045;
-    --accent: #8c7b6a;
-    --border: #c4b499;
+    --bg-body: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-alt: #f1f5f9;
+    --text-main: #0f172a;
+    --text-muted: #475569;
+    --primary: #1e293b;
+    --primary-hover: #334155;
+    --accent: #64748b;
+    --border: #e2e8f0;
 
     /* Smoke Effect Colors - Light */
-    --smoke-1: rgba(69, 58, 48, 0.12);
-    --smoke-2: rgba(69, 58, 48, 0.08);
-    --smoke-3: rgba(69, 58, 48, 0.04);
-    --smoke-4: rgba(69, 58, 48, 0.01);
+    --smoke-1: rgba(30, 41, 59, 0.2);
+    --smoke-2: rgba(71, 85, 105, 0.15);
+    --smoke-3: rgba(100, 116, 139, 0.1);
+    --smoke-4: rgba(148, 163, 184, 0.05);
 }
 
 :root {
@@ -141,7 +138,7 @@ h6 {
 .btn-primary:hover {
     background-color: var(--primary-hover);
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px -10px rgba(226, 232, 240, 0.5);
+    box-shadow: 0 10px 20px -10px rgba(139, 92, 246, 0.5);
 }
 
 .btn-outline {
@@ -166,7 +163,7 @@ h6 {
 /* Navigation */
 .navbar {
     height: var(--header-height);
-    background-color: var(--bg-nav);
+    background-color: rgba(10, 10, 10, 0.8);
     backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
@@ -260,7 +257,7 @@ h6 {
     display: flex;
     align-items: center;
     padding-top: var(--header-height);
-    background: radial-gradient(circle at top right, rgba(226, 232, 240, 0.1), transparent 40%);
+    background: radial-gradient(circle at top right, rgba(139, 92, 246, 0.1), transparent 40%);
 }
 
 .hero-layout {
@@ -474,7 +471,7 @@ h6 {
     border-radius: 50%;
     padding: 4px;
     background: linear-gradient(135deg, var(--primary), var(--accent));
-    box-shadow: 0 0 50px rgba(226, 232, 240, 0.25);
+    box-shadow: 0 0 50px rgba(139, 92, 246, 0.25);
     margin: 0 auto;
 }
 
@@ -521,7 +518,7 @@ h6 {
     height: 10px;
     border-radius: 50%;
     background-color: var(--primary);
-    box-shadow: 0 0 0 4px rgba(226, 232, 240, 0.2);
+    box-shadow: 0 0 0 4px rgba(139, 92, 246, 0.2);
 }
 
 .timeline-date {
@@ -577,7 +574,6 @@ h6 {
 
 .project-info {
     padding: 1.5rem;
-    text-align: center;
 }
 
 .project-info h3 {
@@ -593,8 +589,6 @@ h6 {
 
 .tags {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     gap: 0.5rem;
     margin-bottom: 1.5rem;
 }
